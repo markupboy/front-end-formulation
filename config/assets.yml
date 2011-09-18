@@ -1,0 +1,5 @@
+package_path: javascripts/compiled
+
+javascripts:
+  application:
+    
