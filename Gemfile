@@ -1,0 +1,10 @@
+source 'http://rubygems.org'
+
+gem 'compass'
+gem 'sass'
+gem 'haml'
+gem 'jammit'
+gem 'guard'
+gem 'guard-compass'
+gem 'guard-haml'
+gem 'guard-jammit'
