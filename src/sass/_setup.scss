@@ -1,0 +1,88 @@
+/* _setup.scss
+ * Variables, defaults and mixins
+ * ------------------------------ */
+
+/* @group variables */
+
+// layout sizes, colors, etc.
+
+/* @end */
+
+/* @group defaults */
+
+// compass defaults (e.g. $default-border-radius)
+
+/* @end */
+
+/* @group mixings */
+
+// clearfix for clearing floats
+@mixin clearfix {
+	zoom: 1;
+	&:after {
+		display: block;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		content: ".";
+	}
+}
+
+// center alignment
+@mixin center-block {
+	display: block;
+	margin: 0 auto;
+}
+
+// sizing shortcuts
+@mixin size($width: 5px, $height: 5px) {
+	height: $height;
+	width: $width;
+}
+
+@mixin square($size: 5px) {
+	@include size($size, $size);
+}
+
+// input placeholder text
+@mixin placeholder($color: $gray-lighter) {
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+}
+
+// font stacks
+@mixin shorthand($weight: normal, $size: 13px, $lineheight: 16px) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $lineheight;
+}
+
+@mixin serif($weight: normal, $size: 13px, $lineheight: 16px) {
+	font-family: 'Georgia', 'Times New Roman', serif;
+	@include shorthand(normal, $size, $lineheight);
+}
+
+@mixin sans($weight: normal, $size: 13px, $lineheight: 16px) {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	@include shorthand($weight, $size, $lineheight);
+}
+
+// Text-Image Replacement 
+@mixin replace($url, $width: 5px, $height: 5px, $inline: false) {
+ 	@include background(url($url));
+	@if $inline == true {
+		@include inline-block;
+	} @else {
+		display: block;
+	}
+	height: $height;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: $width;
+}
+
+/* @end */
