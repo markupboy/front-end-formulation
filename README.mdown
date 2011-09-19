@@ -8,7 +8,7 @@ __Why formulation?__ Because I've started to dislike the term "boilerplate", and
 
 ##What it's built on
 
-Front-End Forumlation is based around the SCSS syntax of [SASS](http://www.sass-lang.com) and [Compass](http://compass-style.org/) for assisting in CSS development, [Jammit](http://documentcloud.github.com/jammit/) for JavaScript packaging, and (optionally) [HAML](http://haml-lang.com/) for writing markup.
+Front-End Formulation is based around the SCSS syntax of [SASS](http://www.sass-lang.com) and [Compass](http://compass-style.org/) for assisting in CSS development, [Jammit](http://documentcloud.github.com/jammit/) for JavaScript packaging, and (optionally) [HAML](http://haml-lang.com/) for writing markup.
 
 ##Getting Started
 
